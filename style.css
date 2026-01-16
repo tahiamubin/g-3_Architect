@@ -296,11 +296,28 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
+    gap: 100px;
+
     max-width: 1120px;
     filter: grayscale(100%);
     justify-content: space-around;
 }
+.footer{
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom:  216px;
+    width: 1440px;
+    height: 80px;
+    background-color: #FFF4E7;
+}
+.footer p{
+    font-size: 10px;
+    font-weight: 300;
+    color: #424242;
+    padding: 38px 410px 38px 410px;
 
+}
 
 
 @media screen and (max-width: 576px) {
@@ -320,6 +337,11 @@ header {
     {
         grid-template-columns: repeat(1, 1fr);
     }
+    .sponsor-img,
+    .fact-container{
+        align-items: center;
+        justify-content: center;
+    }
 
     .team-content {
         margin: 20px;
@@ -329,6 +351,7 @@ header {
         width: 500px;
         height: 700px;
     }
-
-
+    .fact-text {
+        padding-top: 200px;
+    }
 }
